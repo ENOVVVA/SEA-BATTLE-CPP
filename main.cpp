@@ -5,6 +5,9 @@ using namespace std;
 char decision;
 bool quit=0;
 int nDot = 0; long long iterration = 0;
+int Playerfield, Enemyfield;
+int ships;
+
 void Initialization(){
     cout << "\n\n\n";
 }
@@ -66,8 +69,50 @@ if (decision == 'C' | decision == 'c'){
     }
 }
 
-
-
+void paintfield(int choose)
+{ 
+    /* Если выбрана установка кораблей, выводим поле игрока и количество его кораблей */
+    if (choose == 1)
+    {
+    cout << "n  0 1 2 3 4 5 6 7 8 9n";
+    for (int count = 0; count < 10; count++) // Выводим 10 столбцов
+    { 
+        cout << count << " "; // Координаты сбоку поля
+        for (int count2 = 0; count2 < 10; count2++)
+        {
+            
+            cout << Playerfield[count][count2] << " "; // Выводим по 10 символов в ряду
+            
+        }
+        cout << endl; // Переходим на следующую строку
+    }
+        cout << endl;
+        
+        cout << "Ваши корабли: " << ships[0] << ", " << ships[1] << ", " << ships[2] << ", " << ships[3] << "; n"; // Оставшиеся у игрока корабли
+    }
+    
+    else if(choose == 2) // Если выбрана игра, рисуем два поля
+    {
+        cout << "n  0 1 2 3 4 5 6 7 8 9t   0 1 2 3 4 5 6 7 8 9n";
+        for (int count = 0; count < 10; count++)
+        {
+            cout << count << " ";
+            for (int count2 = 0; count2 < 10; count2++)
+            {
+                cout << Playerfield[count][count2] << " "; // Поле игрока
+            }
+            
+            cout << "   "; // Растояние между полями 4 пробела
+            cout << count << " "; // Координаты сбоку поля
+            for (int count2 = 0; count2 < 10; count2++)
+            {
+                cout << Enemyfield[count][count2] << " ";  // Поле компьютера
+            }
+            
+            cout << endl;
+        }
+          cout << endl;
+    }
 
 int main(){
     Initialization();
