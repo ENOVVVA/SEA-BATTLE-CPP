@@ -29,16 +29,16 @@ bool timer(bool _return = 0){
 short Menu(){
 if (iterration > 0) iterration = 0;
 clearScreen();
-cout << "          //\\\\           ||‾‾‾‾\\\\               //\\\\             __________     __________    ||                  //#########\n";
-cout << "         //  \\\\          ||     \\\\             //  \\\\            ‾‾‾‾‾‾||‾‾‾‾‾‾     ‾‾‾‾‾‾||‾‾‾‾‾‾    ||                 ||‾‾‾‾‾‾‾‾‾‾\n";
-cout << "        //    \\\\         ||     ||            //    \\\\                 ||                 ||          ||                 ||          \n";
-cout << "       //      \\\\        ||     ||           //      \\\\                ||                 ||          ||                 ||__________\n";
-cout << "      //        \\\\       ||____//           //        \\\\               ||                 ||          ||                 ||##########\n";
-cout << "      \\\\        //       ||     \\\\         //__________\\\\              ||                 ||          ||                 ||‾‾‾‾‾‾‾‾‾‾\n";
-cout << "       \\\\      //        ||      \\\\       //‾‾‾‾‾‾‾‾‾‾‾‾\\\\             ||                 ||          ||                 ||          \n";
-cout << "        \\\\    //         ||      ||      //              \\\\            ||                 ||          ||                 ||          \n";
-cout << "         \\\\  //          ||      //     //                \\\\           ||                 ||          ||_____________    ||__________\n";
-cout << "          \\\\//           ||_____//     //                  \\\\          ||                 ||           \\\\############     \\\\#########\n";
+cout << "          //\\\\           #‾‾‾‾\\\\               //\\\\             __________     __________    #                  //#########\n";
+cout << "         //  \\\\          #     \\\\             //  \\\\            ‾‾‾‾‾‾#‾‾‾‾‾‾     ‾‾‾‾‾‾#‾‾‾‾‾‾    #                 #‾‾‾‾‾‾‾‾‾‾\n";
+cout << "        //    \\\\         #     #            //    \\\\                 #                 #          #                 #          \n";
+cout << "       //      \\\\        #     #           //      \\\\                #                 #          #                 #__________\n";
+cout << "      //        \\\\       #____//           //        \\\\               #                 #          #                 ###########\n";
+cout << "      \\\\        //       #     \\\\         //__________\\\\              #                 #          #                 #‾‾‾‾‾‾‾‾‾‾\n";
+cout << "       \\\\      //        #      \\\\       //‾‾‾‾‾‾‾‾‾‾‾‾\\\\             #                 #          #                 #          \n";
+cout << "        \\\\    //         #      #      //              \\\\            #                 #          #                 #          \n";
+cout << "         \\\\  //          #      //     //                \\\\           #                 #          #_____________    #__________\n";
+cout << "          \\\\//           #_____//     //                  \\\\          #                 #           \\\\############     \\\\#########\n";
 cout << "\n\n\tWELCOME TO THE SEA BATTLE\t\t THE RULE SIMPLE IF YOUR'S ALL SHIPS WILL BE DROWNED, YOU LOSE";
 cout << "\n\n\tControls - C\n\tOptions - O\n\tDetails of rules - R\n\tPlay - P\n\tQuit - Q\n\tYour decision : ";
 cin >> decision;
@@ -52,7 +52,7 @@ if (decision == 'C' | decision == 'c'){
     
 } else if (decision == 'Q' | decision == 'q'){
   clearScreen();
-  cout << "\n\n\n\n\t\tARE YOU SURE?\n\n\t\tY or N\n\n\tYour decision ? || ";
+  cout << "\n\n\n\n\t\tARE YOU SURE?\n\n\t\tY or N\n\n\tYour decision ? # ";
   cin >> decision;
   if (decision == 'Y' | decision == 'y'){
       cout << "\n\n\tOk, wait a minute";
